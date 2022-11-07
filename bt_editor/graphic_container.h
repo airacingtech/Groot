@@ -47,6 +47,8 @@ public:
 
     void loadFromJson(const QByteArray& data);
 
+    void saveSvgFile(const QString path);
+
     QtNodes::Node* substituteNode(QtNodes::Node* old_node, const QString& new_node_ID);
 
     void deleteSubTreeRecursively(QtNodes::Node& node);
