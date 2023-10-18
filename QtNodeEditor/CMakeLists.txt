@@ -79,8 +79,8 @@ target_compile_definitions(QtNodeEditor
 target_compile_options(QtNodeEditor
   PRIVATE
     $<$<CXX_COMPILER_ID:MSVC>:/W4 /wd4127 /EHsc>
-    $<$<CXX_COMPILER_ID:GNU>:-Wall -Wextra -std=c++11>
-    $<$<CXX_COMPILER_ID:Clang>:-Wall -Wextra -std=c++11>
+    $<$<CXX_COMPILER_ID:GNU>:-Wall -Wextra -std=c++17>
+    $<$<CXX_COMPILER_ID:Clang>:-Wall -Wextra -std=c++17>
 )
 
 set_target_properties(QtNodeEditor
